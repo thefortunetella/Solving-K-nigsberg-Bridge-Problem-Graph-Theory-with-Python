@@ -9,23 +9,19 @@ This Bridge Walks Calculator is a Python-based tool designed to compute all poss
 # Files in the Project
 The project consists of three primary Python files:
 
- possiblewalks.py: Contains the core logic for generating walks from a given starting point.
- areas.py: Utilizes possiblewalks.py to generate walks starting from multiple predefined areas.
- allwalks.py: Aggregates all the walks and filters them based on specific criteria, such as length of the walk.
+possiblewalks.py: Contains the core logic for generating walks from a given starting point.
+areas.py: Utilizes possiblewalks.py to generate walks starting from multiple predefined areas.
+allwalks.py: Aggregates all the walks and filters them based on specific criteria, such as length of the walk.
 
 # How It Works
-
 # Generating Walks:
-
 The get_walks_starting_from function in possiblewalks.py is used to generate all possible walks starting from a given area.
 This function uses recursion to explore all paths across bridges, ensuring each bridge is crossed only once in a walk.
 
 # Calculating Walks from Multiple Areas:
-
 areas.py uses get_walks_starting_from to calculate walks starting from each of the specified areas (like 'A', 'B', 'C', 'D').
 
 # Aggregating and Filtering Walks:
-
 allwalks.py combines all walks from different starting points and filters them based on specific criteria (e.g., walks of a certain length).
 Usage
 Ensure you have Python installed on your system.
@@ -48,11 +44,11 @@ This outcome aligns with the famous "Bridges of Königsberg" problem in graph th
 # Implications and Insights
 Our exploration reveals important insights into the nature of graph theory and the complexities of network traversal:
 
-# Eulerian Paths and Circuits: Our problem is essentially about finding an Eulerian path or circuit in a graph. An Eulerian path traverses every edge of a graph exactly once, while an Eulerian circuit starts and ends at the same vertex. Euler proved that such a path or circuit exists if and only if certain conditions are met, typically related to the degrees of the vertices.
+Eulerian Paths and Circuits: Our problem is essentially about finding an Eulerian path or circuit in a graph. An Eulerian path traverses every edge of a graph exactly once, while an Eulerian circuit starts and ends at the same vertex. Euler proved that such a path or circuit exists if and only if certain conditions are met, typically related to the degrees of the vertices.
 
-# Graph Theory in Real-World Applications: While our specific bridge-crossing problem does not have a feasible solution, the underlying principles of graph theory are widely applicable in various fields, from logistics and transportation to computer science and network design.
+Graph Theory in Real-World Applications: While our specific bridge-crossing problem does not have a feasible solution, the underlying principles of graph theory are widely applicable in various fields, from logistics and transportation to computer science and network design.
 
-# Limits of Combinatorial Approaches: Our tool exhaustively computed all possible walks, demonstrating the limitations when faced with certain constraints, like non-repeatable paths across edges in a graph.
+Limits of Combinatorial Approaches: Our tool exhaustively computed all possible walks, demonstrating the limitations when faced with certain constraints, like non-repeatable paths across edges in a graph.
 
 # Final Thoughts
 While our Bridge Walks Calculator did not yield a solution for crossing every bridge exactly once without repetition, it has successfully demonstrated a fundamental principle in graph theory and highlighted the intricacies involved in solving such combinatorial problems. This endeavor not only serves as an educational tool for understanding graph traversal problems but also reminds us of the rich history and ongoing relevance of mathematical explorations in understanding complex networks.
